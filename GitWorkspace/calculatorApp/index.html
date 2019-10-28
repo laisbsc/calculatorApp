@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- this page was written w the basics. add the default stuff to make it accessible!-->
+
+<head>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <title> Calculator App </title>
+  </head>
+
+<body>
+  <form name="calc">
+    <table>
+      <tr>
+        <td> <input type="button" name="clear" value="Cl" onclick="calc.display.value = ''">
+          <td colspan="3.2"> <input type="text" name="display" id="display" disabled> </td>
+      </tr>
+      <tr>
+        <td> <input type="button" name="seven" value="7" onclick="calc.display.value += '7'"></td>
+        <td> <input type="button" name="eight" value="8" onclick="calc.display.value += '8'"></td>
+        <td> <input type="button" name="nine" value="9" onclick="calc.display.value += '9'"></td>
+        <td> <input type="button" class="operator" name="addition" value="+" onclick="calc.display.value += '+'"></td>
+      </tr>
+      <tr>
+        <td> <input type="button" name="four" value="4" onclick="calc.display.value +='4'"></td>
+        <td> <input type="button" name="five" value="5" onclick="calc.display.value +='5'"></td>
+        <td> <input type="button" name="six" value="6" onclick="calc.display.value +='6'"></td>
+        <td> <input type="button" class="operator" name="subtraction" value="-" onclick="calc.display.value += '-'"></td>
+      </tr>
+      <tr>
+        <td> <input type="button" name="one" value="1" onclick="calc.display.value += '1'"></td>
+        <td> <input type="button" name="two" value="2" onclick="calc.display.value += '2'"></td>
+        <td> <input type="button" name="three" value="3" onclick="calc.display.value += '3'"></td>
+        <td> <input type="button" class="operator" name="division" value="/" onclick="calc.display.value += '/'"></td>
+      </tr>
+      <tr>
+        <td> <input type="button" name="dot" value="." onclick="calc.display.value += '.'"></td>
+        <td> <input type="button" name="zero" value="0" onclick="calc.display.value += '0'"></td>
+        <td> <input type="button" class="operator" name="equal" value="=" onclick="calc.display.value = eval(calc.display.value)"></td>
+        <td> <input type="button" class="operator" name="multiplic" value="x" onclick="calc.display.value += '*'"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
