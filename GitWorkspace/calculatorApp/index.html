@@ -7,14 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <title> Calculator App </title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
 <body>
   <form name="calc">
     <table>
       <tr>
-        <td> <input type="button" name="clear" value="Cl" onclick="calc.display.value = ''">
-          <td colspan="3.2"> <input type="text" name="display" id="display" disabled> </td>
+        <td colspan="3"> <input type="text" name="display" id="display" disabled> </td>
+        <td> <input type="button" id="clear" name="clear" value="C" onclick="calc.display.value = ''">
+          
       </tr>
       <tr>
         <td> <input type="button" name="seven" value="7" onclick="calc.display.value += '7'"></td>
@@ -42,6 +44,7 @@
       </tr>
     </table>
   </form>
-</body>
+  <footer> Designed by Lais Carvalho</footer>
+  </body>
 
 </html>
