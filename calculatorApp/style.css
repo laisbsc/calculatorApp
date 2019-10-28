@@ -1,0 +1,74 @@
+body{
+  background-color: rgb(229,252,194,0.3);
+}
+
+table{
+  margin: auto;
+  border-radius: 12px;
+  background-color: #2F9599 ;
+  width: 280px;
+  height: 300px;
+  text-align: center;
+  font-color: #363636;
+  padding: 10px;
+  box-shadow: 0 6px rgba(0,0,0,0.3);
+}
+
+input[type=button]{
+  position: relative;
+  left: 3px;
+  top: 3px;
+  border-radius: 4px;
+  width: 55px;
+  height: 38px;
+  float: left;
+  font-size: 19px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+/*   margin-box: 100px; ?*/ 
+}
+input[type=button]:hover{
+  border: 0 solid #000;
+  color: #495069;
+  background-color: #d2d1d1;
+  border-radius: 4px;
+  width: 50px;
+  height: 30px;
+  box-shadow: 0 4px #474747;
+}
+
+input[type=button]:active{
+  top: 4px;
+  bottom: 4px;
+  border: solid 1px #fff;
+  box-shadow: none;
+}
+
+#display{
+  position: relative;
+  width: 90%;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 20px;
+  resize: none;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+.operator{
+  font-weight: bold;
+  background-color: rgb(84, 121, 128, 0.8);
+}
+
+#clear {
+  height: 40px;
+  float: right;
+  position: relative;
+  display: block;
+  background-color: #83AF9B;
+}
+footer{
+  font-family: "Fanwood Text";
+  padding: 35px;
+  text-align: center;
+  
+}
