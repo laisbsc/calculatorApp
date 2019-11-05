@@ -1,74 +1,57 @@
+/*table of contents
+  body
+  .calculator
+  .display
+  .button
+  .button:hover
+  footer
+*/
+
 body{
-  background-color: rgb(229,252,194,0.3);
-}
-
-table{
-  margin: auto;
-  border-radius: 12px;
-  background-color: #2F9599 ;
-  width: 280px;
-  height: 300px;
-  text-align: center;
-  font-color: #363636;
-  padding: 10px;
-  box-shadow: 0 6px rgba(0,0,0,0.3);
-}
-
-input[type=button]{
-  position: relative;
-  left: 3px;
-  top: 3px;
-  border-radius: 4px;
-  width: 55px;
-  height: 38px;
-  float: left;
-  font-size: 19px;
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-/*   margin-box: 100px; ?*/ 
-}
-input[type=button]:hover{
-  border: 0 solid #000;
-  color: #495069;
-  background-color: #d2d1d1;
-  border-radius: 4px;
-  width: 50px;
-  height: 30px;
-  box-shadow: 0 4px #474747;
-}
-
-input[type=button]:active{
-  top: 4px;
-  bottom: 4px;
-  border: solid 1px #fff;
-  box-shadow: none;
-}
-
-#display{
-  position: relative;
-  width: 90%;
-  height: 35px;
-  border-radius: 5px;
-  font-size: 20px;
-  resize: none;
   background-color: #fff;
-  padding: 5px;
-  box-shadow: 0 4px rgba(0,0,0,0.2);
+  font: 17px "Trebuchet MS", sans-serif;
+  padding: 2em;
+  text-align: center;
 }
-.operator{
-  font-weight: bold;
-  background-color: rgb(84, 121, 128, 0.8);
+.calculator{
+  border-radius: 55px;
+  font-size: 28px;
+  margin: 0 auto;
+  width: 10em;
+}
+.display{
+  background-color: rgba(256,0,0, .50);
+  color: #000;
+  float: center;
+  line-height: 50px;
+  text-align: right;
+  border-radius: 10px;
+  padding: 5px;
+  overflow: hidden;
+  width: 190px;
+  height: 60px;
 }
 
-#clear {
-  height: 40px;
-  float: right;
-  position: relative;
-  display: block;
-  background-color: #83AF9B;
+button {
+  border: 2px;
+  background: rgba(256,0,0, .30);
+  color: #000;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  margin: 5px;
+  width: 60px;
+  height: 55px;
+  border-radius: 25px;
 }
+button:hover {
+  border: 2px solid #000;
+  background: rgba(254,10,0, .50);
+  box-shadow: 0 3px #474747;
+}
+
 footer{
-  font-family: "Fanwood Text";
-  padding: 35px;
+  font-size: 15px;
+  margin-top: 300px;
   text-align: center;
-  
 }
